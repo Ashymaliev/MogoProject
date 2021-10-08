@@ -86,9 +86,14 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link:hover {
     color: #fce38a;
 }
-.nav__link:hover:after {
-  opacity: 1;
 
+.nav__link:hover:after,
+.nav__link.active:after {
+  opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
 }
 
 /* intro */
@@ -161,13 +166,33 @@ h1, h2, h3, h4, h5, h6 {
 .slider{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .slider__item{
-    width: 24%;
+    width: 23%;position: relative;
+    padding: 20px 0;
+    border-top: 3px solid #fff;
+    opacity: 0.7;
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
+}
+
+.slider__item.active{
+    opacity: 1;
+}
+
+.slider__item.active:before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
 }
 
 .slider__num{
