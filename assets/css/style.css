@@ -525,6 +525,7 @@ hr {
 
 .reviews__photo{
     border: 2px solid #95e1d3;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -533,19 +534,20 @@ hr {
 
 .reviews__text{
     margin-bottom: 15px;
+
     font-size: 24px;
     font-style: italic;
     font-weight: 300;
     color: #999;
 }
 
-.reviews__author{
+.reviews__author {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color:#333;
 }
 
-.reviews__author::before{
+.reviews__author::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -576,7 +578,7 @@ hr {
     border-left: 2px solid #ccc;
 }
 
-.reviews__btn--prev{
+.reviews__btn--prev { 
     left: 0;
     transform: rotate(-45deg);
 }
