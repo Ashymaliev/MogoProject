@@ -293,8 +293,10 @@ hr {
 
 .card__item{
     width: 380px;
-    position: relative;
+}
 
+.card__inner{
+    position: relative; 
     background-color: #95e1d3;
 }
 
@@ -338,6 +340,25 @@ hr {
     transform: translate3d(0, -50%, 0);
 
     transition: opacity .2s linear;
+}
+
+.card__info {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.card__name {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+}
+
+.card__prof {
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
 }
 
 /* Statistics */
@@ -618,4 +639,11 @@ hr {
 .social__item:hover{
     background-color: #f38181;
     color: #fff;
+}
+
+/* logos */
+
+.logos {
+    display: flex;
+    justify-content: space-between;
 }
