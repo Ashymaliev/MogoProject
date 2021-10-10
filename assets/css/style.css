@@ -656,7 +656,7 @@ hr {
 }
 
 .works__col {
-    flex: 1 1 0;
+    flex: 1 1  0;
 }
 
 .works__item {
@@ -676,6 +676,8 @@ hr {
 
 .works__image {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .2s linear;
 }
 
