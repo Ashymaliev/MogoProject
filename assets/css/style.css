@@ -1108,8 +1108,53 @@ hr {
     color: #f38181;
 }
 
-@media (max-width: 1200px) {
-    body {
-        background: #000;
+@media (max-width: 1230px) {
+
+    /* intro */
+    .intro__suptitle{
+        font-size: 52px;
+    }
+
+    .intro__title {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 990px) {
+    /* intro */
+    .intro__suptitle{
+        font-size: 32px;
+    }
+
+    .intro__title {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 770px) {
+
+     /* nav */
+    .nav {
+        display: none;
+    }
+
+    /* slider */
+    .slider__text{
+        display: none;
+    }
+
+    .slider--item.active:before{
+        width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    /* intro */
+    .intro__suptitle{
+        font-size: 22px;
+    }
+
+    .intro__title {
+        font-size: 50px;
     }
 }
