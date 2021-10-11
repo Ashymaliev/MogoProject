@@ -31,7 +31,8 @@ hr {
 /* container */
 .container{
     width: 100%;
-    max-width:  1200px;
+    max-width:  1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -1105,4 +1106,10 @@ hr {
 
 .copyright span {
     color: #f38181;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background: #000;
+    }
 }
