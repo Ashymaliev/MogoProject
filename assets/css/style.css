@@ -301,7 +301,7 @@ hr {
 
 /* card */
 .card {
-    margin-top: 80px -15px 0;
+    margin: 80px -15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -482,14 +482,19 @@ hr {
 
 .wedo{
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo__item{
     width: 50%;
+    padding: 0 15px;
 }
 
 .wedo__img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* accordion */
@@ -1199,7 +1204,7 @@ hr {
     }
     .card__item {
         width: 100%;
-        min-width: 410px;
+        max-width: 410px;
         margin-bottom: 30px;
     }
 
@@ -1229,6 +1234,15 @@ hr {
 
     .services__icon {
         left: 0;
+    }
+
+     /* wedo */
+     .wedo__img{
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
     }
 }
 
