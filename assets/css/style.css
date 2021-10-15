@@ -68,7 +68,7 @@ hr {
     cursor: pointer;
 }
 
-.header--fixed{
+.header.fixed{
     padding: 10px 0;
 
     background-color: #eb8b8d;
@@ -79,6 +79,10 @@ hr {
     right: 0;
     left: 0;
     transform: translate3d(0,0,0);
+}
+
+.header.active {
+    background-color: #eb8b8d;
 }
 
 /* nav */
@@ -1331,6 +1335,22 @@ hr {
      /* nav */
     .nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #eb8b8d;
+    }
+
+    .nav__link {
+       display: block;
+       margin: 0;
+       padding: 7px 20px;
+    }
+
+    .nav-toggle{
+        display: block;
     }
 
     /* section */
