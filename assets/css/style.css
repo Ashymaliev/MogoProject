@@ -153,8 +153,8 @@ hr {
     z-index: 1;
 }
 
-.nav-toggle.active .nav-toggle__item{
-    background: none;
+.nav-toggle:focus{
+    outline: 0;
 }
 
 .nav-toggle__item{
@@ -173,7 +173,9 @@ hr {
     transition:background .2s linear ;
 }
 
-
+.nav-toggle.active .nav-toggle__item{
+    background: none;
+}
 
 .nav-toggle__item::before,
 .nav-toggle__item::after{
@@ -676,6 +678,7 @@ hr {
     position: relative;
 }
 .reviews__item{
+    min-height: 210px;
     padding-left: 255px;
     position: relative;
 }
@@ -1348,7 +1351,7 @@ hr {
 @media (max-width: 770px) {
     /* header */
     .header{
-        padding-top: 10px;
+        padding: 10px 0;
     }
 
      /* intro */
@@ -1360,11 +1363,16 @@ hr {
     .nav {
         display: none;
         width: 100%;
+
         position: absolute;
         top: 100%;
         left: 0;
 
         background-color: #eb8b8d;
+    }
+
+    .nav.active {
+        display: block;
     }
 
     .nav__link {
