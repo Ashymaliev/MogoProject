@@ -60,6 +60,7 @@ $(function() {
             blockId = $this.data('collapse');
 
         $this.toggleClass("active");
+        
     });
 
 
